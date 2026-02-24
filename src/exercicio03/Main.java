@@ -1,4 +1,4 @@
-package exercicio01;
+package exercicio03;
 
 import java.util.Random;
 import java.util.Scanner;

@@ -20,5 +20,6 @@ public class Main {
         alvo= paciente.Alvo();
         System.out.println();
         System.out.println("Frequencia recomendada para o paciente:" + "\n50%--> "+ alvo[0] + "\n85%--> "+ alvo[1]);
+
     }
 }

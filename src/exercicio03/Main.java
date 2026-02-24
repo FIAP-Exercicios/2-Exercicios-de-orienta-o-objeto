@@ -1,24 +1,20 @@
 package exercicio03;
 
-import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Conta conta= new Conta();
+        Professores professores= new Professores();
         Scanner sc= new Scanner(System.in);
-        Random rd= new Random();
 
-        System.out.println("Qual seu nome?");
-        conta.nome=sc.nextLine();
-        conta.numero= rd.nextInt(10, 10000);
-        System.out.println(conta.saldo);
-        conta.Depositar(10000);
+        System.out.println("Me diga seu nome--> ");
+        professores.nome=sc.next();
+        System.out.println("Total de aulas semanais--> ");
+        professores.totalAulas= sc.nextInt();
+        System.out.println("Valor por hora--> ");
+        professores.valorDaAula=sc.nextInt();
 
-        System.out.println(conta.saldo);
-        conta.Sacar(5500);
-        System.out.println(conta.saldo);
-
-
+        System.out.println(professores.nome);
+        System.out.println("Seu sálario R$ "+professores.calcularSalario());
     }
 }
